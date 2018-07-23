@@ -12,4 +12,19 @@ brew 'zsh-completions'
 # Apps
 cask 'android-plaform-tools'
 cask 'android-sdk'
+cask 'avast-security'
 cask 'betterzip'
+cask 'evernote'
+cask 'firefox'
+cask 'google-chrome'
+cask 'iterm2'
+cask 'sourcetree'
+cask 'spectacle'
+cask 'spotify'
+cask 'sublime-text'
+cask 'tunnelbear'
+cask 'vlc'
+cask 'windscribe'
+
+# Install Mac App Store apps
+mas 'The Unarchiver', id: 425424353
