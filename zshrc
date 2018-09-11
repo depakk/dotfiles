@@ -24,11 +24,11 @@ fi
 
 fpath=(/usr/local/share/zsh-completions $fpath)
 
-
 # Export bin paths
 export PATH='/usr/local/bin:/usr/local:/usr/local/sbin:/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin'
 export ANDROID_SDK_ROOT="/usr/local/share/android-sdk"
-export JAVA_HOME="$(/usr/libexec/java_home -v 1.8)"
+# I don't have Java 1.8 so error for next line
+# export JAVA_HOME="$(/usr/libexec/java_home -v 1.8)"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh

@@ -10,7 +10,7 @@ brew 'zsh'
 brew 'zsh-completions'
 
 # Apps
-cask 'android-plaform-tools'
+cask 'android-platform-tools'
 cask 'android-sdk'
 cask 'avast-security'
 cask 'betterzip'

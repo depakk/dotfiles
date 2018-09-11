@@ -7,6 +7,8 @@ if test ! $(which brew); then
   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
+echo "Installed Brew successfully"
+
 # Update Homebrew recipes
 brew update
 
@@ -16,6 +18,7 @@ brew bundle
 
 # Make ZSH the default shell environment
 chsh -s $(which zsh)
+echo "Making zsh the default shell"
 
 # Install antibody
 if which brew >/dev/null 2>&1; then
@@ -24,6 +27,8 @@ else
   curl -sL https://git.io/antibody | sh -s
 fi
 antibody bundle < $HOME/dotfiles"/antibody/bundles.txt" > $HOME/dotfiles/zsh_plugins.sh
+
+echo "Installed antibody"
 
 # Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the .dotfiles
 rm -rf $HOME/.zshrc
